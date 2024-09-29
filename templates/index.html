@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMeans Clustering Visualization</title>
+    <link rel="stylesheet" href="static/style.css">  <!-- Optional: You can style the interface -->
+</head>
+<body>
+    <h1>KMeans Clustering Visualization</h1>
+
+    <!-- Dropdown to select initialization method -->
+    <label for="initMethod">Initialization Method:</label>
+    <select id="initMethod">
+        <option value="random">Random</option>
+        <option value="farthest">Farthest First</option>
+        <option value="kmeans++">KMeans++</option>
+        <option value="manual">Manual</option>
+    </select>
+
+    <!-- Input to set the number of centroids -->
+    <label for="numCentroids">Number of Centroids:</label>
+    <input type="number" id="numCentroids" value="3" min="1" max="10">
+
+    <!-- Buttons for interaction -->
+    <button id="generateBtn">Generate New Dataset</button>
+    <button id="initializeBtn">Initialize Centroids</button>
+    <button id="stepBtn">Step Through KMeans</button>
+    <button id="convergeBtn">Converge</button>
+    <button id="resetBtn">Reset</button>
+
+    <!-- Plot for data and centroids -->
+    <div id="plot" style="width: 500px; height: 500px; border: 1px solid black;"></div>
+
+    <script src="static/kmeans.js"></script>
+</body>
+</html>

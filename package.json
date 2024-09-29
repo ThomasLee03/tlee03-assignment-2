@@ -1,0 +1,24 @@
+{
+    "name": "kmeans-clustering",
+    "version": "1.0.0",
+    "description": "A KMeans clustering web application with multiple initialization methods and step-by-step visualization",
+    "main": "index.html",
+    "scripts": {
+      "start": "http-server -p 3000",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "KMeans",
+      "clustering",
+      "visualization",
+      "JavaScript",
+      "http-server"
+    ],
+    "author": "Your Name",
+    "license": "ISC",
+    "dependencies": {
+      "http-server": "^14.1.1"
+    },
+    "devDependencies": {}
+  }
+  
